@@ -1,0 +1,506 @@
+jedesa> hey!
+6:07 PM
+ 
+<amigojapan> hey jedesa !
+6:07 PM
+ 
+<amigojapan> jedesa: shoudl we start?
+6:07 PM
+ 
+<jedesa> is it python or logo for today?
+6:07 PM
+ 
+<amigojapan> we only have about 1 hour
+6:08 PM
+ 
+<jedesa> Yeah
+6:08 PM
+ 
+<amigojapan> python
+6:08 PM
+ 
+<amigojapan> jedesa: so first go to this link https://stepindev.com/en/py-playground
+6:08 PM
+ 
+<jedesa> Okay
+6:08 PM
+ 
+<amigojapan> ok?
+6:09 PM
+ 
+<amigojapan> then enter the following program:
+6:09 PM
+ 
+<jedesa> turtle and function
+6:09 PM
+ 
+<amigojapan> from turtle import *
+6:09 PM
+ 
+<amigojapan> fd(100)
+6:09 PM
+ 
+<amigojapan> then hit run
+6:09 PM
+ 
+<jedesa> Nice
+6:10 PM
+ 
+<amigojapan> ok jedesa  turtle is a python library that works pretty much like LOGO
+6:10 PM
+ 
+<jedesa> Oh I forgot to turn of existing algorithm
+6:10 PM
+ 
+<amigojapan> so the first line imports the turtle library then the next line if liek fd 100 in LOGO
+6:10 PM
+ 
+<jedesa> a line to the right
+6:10 PM
+ 
+<amigojapan> yes, one sec
+6:10 PM
+ 
+<amigojapan> I will give you and example
+6:11 PM
+ 
+<amigojapan> jedesa: now try this program:
+6:11 PM
+ 
+<amigojapan> from turtle import *
+6:11 PM
+ 
+<amigojapan> 
+6:11 PM
+ 
+<amigojapan> fd(100)
+6:11 PM
+ 
+<amigojapan> rt(90)
+6:11 PM
+ 
+<amigojapan> fd(100)
+6:11 PM
+ 
+<amigojapan> rt(90)
+6:11 PM
+ 
+<amigojapan> fd(100)
+6:11 PM
+ 
+<amigojapan> rt(90)
+6:11 PM
+ 
+<amigojapan> was the program displayed?
+6:12 PM
+ 
+<jedesa> this would be a square
+6:12 PM
+ 
+<amigojapan> I will pastebin it
+6:12 PM
+ 
+<amigojapan> yes
+6:13 PM
+ 
+<amigojapan> jedesa: not try this:
+6:13 PM
+ 
+<amigojapan> from turtle import *
+6:13 PM
+ 
+<amigojapan> for i in range(0,4):
+6:13 PM
+ 
+<amigojapan>     fd(size)
+6:13 PM
+ 
+<amigojapan>     rt(90)
+6:13 PM
+ 
+<amigojapan> oops
+6:13 PM
+ 
+<amigojapan> one sec
+6:13 PM
+ 
+<jedesa> it's similar to repeat function
+6:14 PM
+ 
+<jedesa> I must set size at first
+6:14 PM
+ 
+<amigojapan> from turtle import *
+6:14 PM
+ 
+<amigojapan> for i in range(0,4):
+6:14 PM
+ 
+<amigojapan>     fd(100)
+6:14 PM
+ 
+<amigojapan>     rt(90)
+6:14 PM
+ 
+<amigojapan> yes
+6:14 PM
+ 
+<amigojapan> jedesa: for loops are mroe common in normal programming languages than repreat loops
+6:14 PM
+ 
+<amigojapan> let me explain the for loop
+6:14 PM
+ 
+<jedesa> I see
+6:15 PM
+ 
+<amigojapan> for counter_variable in range(start,end(
+6:15 PM
+ 
+<amigojapan> jedesa: now, there is a difference here with LOGO, you need to start form 0 , not 1
+6:15 PM
+ 
+<amigojapan> try changing hte 0 to 1 and run the program
+6:16 PM
+ 
+<amigojapan> what happens?
+6:16 PM
+ 
+<jedesa> missing a side, so only 3 iterations
+6:16 PM
+ 
+<amigojapan> yeah jedesa m this is because python is (0 indexed) it counts form 0
+6:17 PM
+ 
+<jedesa> Yes
+6:17 PM
+ 
+<amigojapan> ok, let me give you next example, one sex
+6:17 PM
+ 
+<amigojapan> sec*
+6:17 PM
+ 
+<jedesa> Okay
+6:18 PM
+ 
+<amigojapan> from turtle import *
+6:18 PM
+ 
+<amigojapan> def square(size):
+6:18 PM
+ 
+<amigojapan>     for i in range(0,4):
+6:18 PM
+ 
+<amigojapan>         fd(size)
+6:18 PM
+ 
+<amigojapan>         rt(90)
+6:18 PM
+ 
+<amigojapan> square(100)
+6:18 PM
+ 
+<amigojapan> remember this program in LOGO?
+6:18 PM
+ 
+<amigojapan> defe defines a function
+6:18 PM
+ 
+<jedesa> Yes, function in python
+6:18 PM
+ 
+<amigojapan> yes
+6:18 PM
+ 
+<jedesa> function syntax
+6:19 PM
+ 
+<amigojapan> jedesa:  now I need to tell you a big difference between python and LOGO
+6:19 PM
+ 
+— jedesa listens carefuly
+6:19 PM
+ 
+<amigojapan> jedesa: rememmber haniibooru asked " is the space between the left and the command, nessesay or for makign it pretty?"
+6:19 PM
+ 
+<jedesa> (guessing) indent
+6:19 PM
+ 
+<amigojapan> yes
+6:20 PM
+ 
+<amigojapan> jedesa: indents are only for styel in LOGO, but in python they are nessesary
+6:20 PM
+ 
+<jedesa> I heard about python takes into account of that
+6:20 PM
+ 
+<amigojapan> yeah, thats why you dont need to type end like in LOGO
+6:21 PM
+ 
+<amigojapan> jedesa: whenever a new indent is made it opens up a "new block of code" do you understand?
+6:21 PM
+ 
+<jedesa> But you are free to use whether 2 or 4 spaces, but it must be consistent throughout
+6:21 PM
+ 
+<jedesa> since it will tell new block..
+6:22 PM
+ 
+<amigojapan> jedesa: use 4 spaces please
+6:22 PM
+ 
+<jedesa> Okay
+6:22 PM
+ 
+<amigojapan> ok
+6:22 PM
+ 
+<amigojapan> now for the final program for today, one sec
+6:23 PM
+ 
+<amigojapan> from turtle import *
+6:23 PM
+ 
+<amigojapan> def square(size):
+6:23 PM
+ 
+<amigojapan>     for i in range(0,4):
+6:23 PM
+ 
+<amigojapan>         fd(size)
+6:23 PM
+ 
+<amigojapan>         rt(90)
+6:23 PM
+ 
+<amigojapan> square(50)
+6:23 PM
+ 
+<amigojapan> square(100)
+6:23 PM
+ 
+<amigojapan> square(200)
+6:25 PM
+ 
+<jedesa> Okay I have these on the workspace
+6:25 PM
+ 
+<amigojapan> what appeared?
+6:25 PM
+ 
+<jedesa> and creates 3 squares on top of each other
+6:25 PM
+ 
+<amigojapan> yeah, ame as we did in LOGO
+6:26 PM
+ 
+<amigojapan> jedesa: now, your homework, is make 一  and hten 品  in python
+6:26 PM
+ 
+<jedesa> Yes
+6:26 PM
+ 
+<jedesa> oh no
+6:26 PM
+ 
+<amigojapan> jedesa: I can send you last lesson if you want
+6:26 PM
+ 
+— jedesa characters did not appear
+6:26 PM
+ 
+<amigojapan> the LOGO one
+6:26 PM
+ 
+<amigojapan> jedesa: ichi and shina,
+6:27 PM
+ 
+<amigojapan> jedesa: same as last lesson in LOGO
+6:27 PM
+ 
+<jedesa> okay
+6:30 PM
+ 
+<amigojapan> jedesa: give me a minute
+6:30 PM
+ 
+<jedesa> Oh I already found the characters..
+6:30 PM
+ 
+<jedesa> working on it now :D
+6:30 PM
+ 
+<jedesa> 3 lines and 3 boxes right?
+6:32 PM
+ 
+<amigojapan> yes jedesa 
+6:35 PM
+ 
+<jedesa> we have ichi now https://paste.centos.org/view/f8fd273b
+6:35 PM
+ 
+<amigojapan> let me see jedesa 
+6:35 PM
+ 
+<amigojapan> jedesa: here is hte previous lesson https://amjp.psy-k.org/Learn-programming-form--AmigoJapan-in-LOGO/index.html
+6:35 PM
+ 
+<JesseDesu> what are we doing
+6:36 PM
+ 
+<jedesa> we are on class JesseDesu :D
+6:36 PM
+ 
+<JesseDesu> ok
+6:40 PM
+ 
+<amigojapan> ok jedesa here is a little correciton on ths Japanese with some corrections on the Japanese and taking away the comments:
+6:41 PM
+ 
+<amigojapan> from turtle import *
+6:41 PM
+ 
+<amigojapan> 
+6:41 PM
+ 
+<amigojapan> def ichi():
+6:41 PM
+ 
+<amigojapan>     fd(100)
+6:41 PM
+ 
+<amigojapan>     rt(180)
+6:41 PM
+ 
+<amigojapan>     fd(100)
+6:41 PM
+ 
+<amigojapan>     lt(90)
+6:41 PM
+ 
+<amigojapan>     pu()
+6:41 PM
+ 
+<amigojapan>     fd(25)
+6:41 PM
+ 
+<amigojapan>     lt(90)
+6:41 PM
+ 
+<amigojapan>     pd()
+6:41 PM
+ 
+<amigojapan> 
+6:41 PM
+ 
+<amigojapan> def san():
+6:41 PM
+ 
+<amigojapan>     for i in range(0,3):
+6:41 PM
+ 
+<amigojapan>         ichi()
+6:41 PM
+ 
+<amigojapan>         
+6:41 PM
+ 
+<amigojapan> san()
+6:41 PM
+ 
+<amigojapan> https://www.irccloud.com/pastebin/ItJUsxWr/
+ Plain Text • 17 lines raw | line numbers 
+ 
+6:41 PM
+ 
+<amigojapan> JesseDesu: after class we will watch Frieeren
+6:42 PM
+ 
+<jedesa> oh different name?
+6:42 PM
+ 
+<amigojapan> eys jedesa 
+6:42 PM
+ 
+<amigojapan> yes
+6:42 PM
+ 
+— jedesa working on shina
+6:42 PM
+ 
+<amigojapan> ok
+6:42 PM
+ 
+<jedesa> Yeah I feel something is amiss
+6:42 PM
+ 
+<amigojapan> jedesa: looking at your code form the last class , it shoudl be easy
+6:51 PM
+ 
+<jedesa> yippie both working now https://paste.centos.org/view/a2c1c0ec
+6:51 PM
+ 
+<jedesa> I made myself available to other documentation I could find :D
+6:51 PM
+ 
+<jedesa> https://docs.python.org/3/library/turtle.html
+6:54 PM
+ 
+<jedesa> amigojapan: .. are you still there?
+6:54 PM
+ 
+<amigojapan> let me see jedesa 
+6:57 PM
+ 
+<jedesa> okay
+6:58 PM
+ 
+<amigojapan> jedesa: wait
+6:59 PM
+ 
+<jedesa> alright :D
+6:59 PM
+ 
+<amigojapan> jedesa: I tried cleaning yorus up but it does not seem to work https://pastebin.com/HRPGa35v
+6:59 PM
+ 
+<amigojapan> jedesa: next time please make sure the program starts at the first indentation space, and delete all the comments and previous code
+7:00 PM
+ 
+<jedesa> huh
+7:01 PM
+ 
+<jedesa> how about this amigojapan https://paste.centos.org/view/557b92f6
+7:01 PM
+ 
+<amigojapan> let me see
+7:01 PM
+ 
+<jedesa> oh no wait that's wrong
+7:01 PM
+ 
+<amigojapan> ok
+7:02 PM
+ 
+<jedesa> there's a typo here's https://paste.centos.org/view/fa42e7f0
+7:02 PM
+ 
+<amigojapan> let me see
+7:02 PM
+ 
+<jedesa> https://stepindev.com/en/py-playground/share#dZHdUsMgEIXveYqd6Q1xapOa1tHe6RM44xNgsimMCSBsZqxPLyG0pdpywc-eZb_DsoBX4bEFo-H9c-wtAZdE1u_Kcq9Ijh-rxgylj1JaCraAF2ud-VaDIOwP0Bjn0FujWw9vB5KhWL16ZKxzZgAaHfUIarDGEdwx1mIHqpGKe_WDxY5BGF07n-LBEV8_VfP-QuiJP6e4Hfkp4WH7X26DHEle6AuQcaBAaXBC75FXyzoJ0zi7Sne_RuGQp4wT0iNJvknQwN8maIznBq4CNxkwvPTo-E-tCJtNSKVF_oTchzU-lDx36Og41-8neRnn20k3c9jUwHUVbIUvRvKNQ9QhLs0wybO7uip-AQ
+7:02 PM
+ 
+<amigojapan> yes that writes both san and shina, but ok, jedesa , end lesson for today :)
+7:02 PM
+ 
+<jedesa> the workspace has sharable link
+7:02 PM
+ 
+<jedesa> Nice!
+
+<amigojapan> jedesa: so you see, mostly the difference between python and LOGO is in small syntax changes
