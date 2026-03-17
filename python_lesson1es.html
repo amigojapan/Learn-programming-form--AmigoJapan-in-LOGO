@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background-color: black;
+    color: rgb(235, 174, 235); /* This sets the text color for the entire body */
+  }
+</style>
+</head>
+<body>
+<pre>
+
+
+jedesa: ¡Hola! 
+amgigojapan: ¡Hola jedesa! 
+amgigojapan: jedesa: ¿Empezamos? 
+jedesa: ¿Hoy toca Python o Logo? 
+amgigojapan: Solo tenemos una hora. 
+jedesa: Sí. 
+amgigojapan: Python. 
+amgigojapan: jedesa: Primero ve a este enlace.
+</pre>
+<a href="https://stepindev.com/en/py-playground" target="_blank">https://stepindev.com/en/py-playground</a>
+<pre>
+jedesa: Ok 
+amgigojapan: ¿ok? 
+amgigojapan: entonces ingresa el siguiente programa: 
+jedesa: turtle y función 
+amgigojapan: from turtle import * 
+amgigojapan: fd(100) 
+amgigojapan: luego presiona ejecutar 
+jedesa: Bien 
+amgigojapan: ok jedesa turtle es una biblioteca de python que funciona de manera muy parecida a LOGO 
+jedesa: Oh, olvidé desactivar el algoritmo existente 
+amgigojapan: entonces la primera línea importa la biblioteca turtle y luego la siguiente línea es como fd 100 en LOGO 
+jedesa: una línea a la derecha 
+amgigojapan: sí, un segundo 
+amgigojapan: te daré un ejemplo 
+amgigojapan: jedesa: ahora prueba este programa: 
+from turtle import * 
+
+fd(100) 
+rt(90) 
+fd(100) 
+rt(90) 
+fd(100) 
+rt(90) 
+amgigojapan: ¿se mostró el programa? 
+jedesa: esto sería un cuadrado 
+amgigojapan: sí 
+amgigojapan: jedesa: no intente esto: 
+from turtle import * 
+for i in range(0,4): 
+    fd(100) 
+    rt(90) 
+
+jedesa: for es similar a la función repeat en LOGO 
+amgigojapan: jedesa: los bucles for son más comunes en los lenguajes de programación normales que los bucles repeat 
+amgigojapan: déjame explicar el bucle for 
+jedesa: veo 
+amgigojapan: for counter_variable in range(start,end) 
+amgigojapan: jedesa: ahora, hay una diferencia aquí con LOGO, necesitas comenzar desde 0, no desde 1 
+amgigojapan: intenta cambiar el 0 a 1 y ejecuta el programa 
+amgigojapan: ¿qué sucede? 
+jedesa: falta un lado, así que solo 3 iteraciones 
+amgigojapan: sí jedesa esto es porque python es (indexado 0) cuenta desde 0 
+jedesa: Sí 
+amgigojapan: ok, déjame darte el siguiente ejemplo, un segundo... 
+jedesa: Ok 
+from turtle import * 
+def square(size): 
+    for i in range(0,4): 
+        fd(size) 
+        rt(90) 
+square(100) 
+amgigojapan: ¿recuerdas este programa en LOGO? 
+amgigojapan: define una función 
+jedesa: Sí, función en python 
+amgigojapan: sí 
+jedesa: sintaxis de función 
+amgigojapan: jedesa: ahora necesito decirte una gran diferencia entre python y LOGO 
+— jedesa escucha atentamente 
+amgigojapan: jedesa: recuerda que Haniibooru preguntó "¿el espacio entre left y command es necesario o para embellecerlo?" 
+jedesa: (adivinando) indentación 
+amgigojapan: sí 
+amgigojapan: jedesa: las indentaciones son solo para estilo en LOGO, pero en python son necesarias 
+jedesa: escuché que python toma en cuenta eso
+amgigojapan: sí, por eso no necesitas escribir END como en LOGO 
+    pu()
+amgigojapan: jedesa: cada vez que se hace una nueva sangría se abre un "nuevo bloque de código", ¿entiendes? 
+jedesa: Pero puedes usar 2 o 4 espacios, pero debe ser consistente en todo momento 
+jedesa: ya que indicará un nuevo bloque... 
+amgigojapan: jedesa: usa 4 espacios por favor 
+jedesa: Ok 
+amgigojapan: ok 
+amgigojapan: ahora para el programa final de hoy, un segundo 
+from turtle import * 
+def square(size): 
+    for i in range(0,4): 
+        fd(size) 
+        rt(90) 
+square(50) 
+square(100) 
+square(200) 
+jedesa: Ok, tengo esto en el espacio de trabajo 
+amgigojapan: ¿qué apareció? 
+jedesa: y crea 3 cuadrados uno encima del otro 
+amgigojapan: sí, lo mismo que hicimos en LOGO 
+amgigojapan: jedesa: ahora, tu tarea es hacer ä¸‰ y luego å“ en python 
+jedesa: Sí 
+amgigojapan: jedesa: san y shina, 
+amgigojapan: jedesa: lo mismo que la última lección en LOGO 
+jedesa: de acuerdo 
+jedesa: estoy trabajando en ello ahora :D 
+amgigojapan: jedesa: aquí está la lección anterior <a href=https://amjp.psy-k.org/Learn-programming-form--AmigoJapan-in-LOGO/index.html target="_blank">https://amjp.psy-k.org/Learn-programming-form--AmigoJapan-in-LOGO/index.html</a>
+#ejecutar en https://stepindev.com/en/py-playground 
+from turtle import * 
+def ichi(): 
+    fd(100) 
+    rt(180) 
+    fd(100) 
+    lt(90) 
+    pu() 
+    fd(25) 
+    lt(90) 
+    pd() 
+def san(): 
+    for i in range(0,3): 
+        ichi() 
+san() 
+— jedesa trabajando en shina 
+amgigojapan: ok 
+jedesa: documentos de python turtle <a href=https://docs.python.org/3/library/turtle.html target="_blank">https://docs.python.org/3/library/turtle.html</a>
+jedesa: amigojapan: ... ¿sigues ahí? 
+amgigojapan: déjame ver jedesa 
+jedesa: está bien 
+amgigojapan: jedesa: espera 
+jedesa: bien :D 
+amgigojapan: jedesa: Intenté limpiar el tuyo pero no parece funcionar 
+amgigojapan: jedesa: la próxima vez asegúrate de que el programa comience en el primer espacio de indentación y elimina todos los comentarios y el código anterior 
+jedesa: ¿eh? 
+amgigojapan: ok 
+#ejecutar en https://stepindev.com/en/py-playground 
+from turtle import * 
+def ichi(size): 
+    fd(size) 
+    rt(180) 
+    fd(size) 
+    lt(90) 
+    pu() 
+    fd(25) 
+    lt(90) 
+    pd() 
+def san(size): 
+    for i in range(0,3): 
+        ichi(size) 
+def square(): 
+    seth(45) 
+    fd(50) 
+    seth(0) 
+    pd()
+
+
+
+ 
+    for i in range(0,4): 
+        rt(90) 
+        fd(50) 
+    pu() 
+
+def shina(size): 
+    pu() 
+    setpos(0,size) 
+    square() 
+    setpos(-size,-size) 
+    square() 
+    setpos(size,-size) 
+    square() 
+
+san(100) 
+resetscreen() 
+home() 
+shina(30) 
+amgigojapan: déjame ver 
+amgigojapan: sí, eso escribe tanto san como shina, pero bueno, jedesa, fin de la lección de hoy :) 
+jedesa: ¡Genial! 
+amgigojapan: jedesa: así que ves, la mayor parte de la diferencia entre Python y LOGO está en pequeños cambios de sintaxis
+</pre>
+</body>
+</html>

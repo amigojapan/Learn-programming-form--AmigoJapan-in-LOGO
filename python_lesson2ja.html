@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background-color: black;
+    color: rgb(235, 174, 235); /* This sets the text color for the entire body */
+  }
+</style>
+</head>
+<body>
+<pre>
+amigojapan: やぁ、jedesa！
+jedesa: やぁ！
+jedesa：では、今日は何を学ぶのでしょうか？
+amgigojapan: jedesa: 今日はプログラミングの8つの基本を教えようと思ったのですが、すでにそのためのコースを作っているので、お見せしましょう。
+amgigojapan: jedesa: このページは私が書いたものです
+
+<a href=https://amigojapan-github-io.translate.goog/8_basics_of_programming/8_basics_of_programming_python3_new.html?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=en&_x_tr_pto=wapp target="_blank">https://amigojapan.github.io/8_basics_of_programming/8_basics_of_programming_python3_new.html</a>
+
+— jedesaが読んでいます。
+amgigojapan: jedesa: ええ、何でも質問してください
+jedesa：わかった、10分
+amgigojapan: jedesa: ゆっくり時間をかけて読んで、質問したいことは何でも聞いてください
+jedesa：わかった、確認しなきゃ
+jedesa: そして、公式のPythonドキュメントを少し調べてみてください。
+amgigojapan: いいですね、jedesaさん、何か質問はありますか？
+jedesa：うーん、見てみよう
+— jedesaの考え…
+amgigojapan: わかった
+jedesa: プログラミング入門としては、これで十分だと思います
+amgigojapan: ああ、わかったよ、jedesa
+amgigojapan: jedesa: さて、余った時間を埋めるために、新しい知識を使ってできる練習問題を考えてみましょう
+jedesa：でも問題があります
+amgigojapan: jedesa: まず、「こんにちは、jedesaです」と永遠に表示するループを作成できますか？
+amgigojapan: 何が問題なのですか？
+jedesa: while True: print("こんにちは、jedesaです")
+amgigojapan: ああ、素晴らしい！
+jedesa: うーん、それは私がPythonを使ってきた時間と経験に関係していると思います
+jedesa: 以前Pythonを少し調べたことはありますが、当時はドキュメントがかなり充実していて包括的だとは知りませんでした
+amgigojapan: jedesa: ええと、私の指示とドキュメントの両方が必要だと思います
+jedesa：わかった
+amgigojapan: jedesa: わかった、じゃあ君の好きなアニメのリストを作って、それを逆アルファベット順に並べて表示してくれ
+jedesa：ちょっと待って
+amgigojapan: わかった
+amgigojapan: ゆっくり時間をかけてください
+jedesa: Pythonの組み込み関数を利用しました
+<a href=lesson3img/screenshot2.png><img src="lesson3img/screenshot2.png"width="400" height="250"></a>
+amgigojapan: jedesaさん、素晴らしいですね。では、私の数字を当てるゲームを作っていただけますか？乱数の生成方法を調べる必要があるかもしれませんが、私が教えてあげましょうか？
+amgigojapan: jedesa: 数字当てゲームを知っていますか？
+jedesa：このゲームについてはよくわからない
+amgigojapan: わかったよ、jedesa。じゃあ、私がコンピューターのふりをするから、君はユーザーになってね。いい？
+jedesa: 例えば、1から10までの数字が与えられ、人間とコンピューターの両方が正解した場合、そこで停止するのですか？
+amgigojapan: jedesa: まあ、正確にはそうではないけど
+amgigojapan: jedesa: まずはロールプレイをしてみましょう、そうすれば理解できます
+jedesa：わかった
+amgigojapan: わかった、私はコンピューターです
+jedesa：うん
+amgigojapan: 1から100までの数字をランダムに選びます...
+amgigojapan: jedesa: わかったよ
+amgigojapan: jedesa: さて、私がどの番号を選んだか当ててみて...
+jedesa：うーん、55
+amgigojapan: jedesa: それは低すぎる
+amgigojapan: もう一度考えてみてください
+jedesa: 75
+amgigojapan: それは高すぎます、もう一度推測してください
+jedesa: 67
+amgigojapan: それは低すぎます、もう一度推測してください
+jedesa: 70
+amgigojapan: それは低すぎます、もう一度推測してください
+jedesa: 73
+amgigojapan: それは高すぎます。もう一度考えてください。
+jedesa: 72
+amgigojapan: それは高すぎます、もう一度推測してください
+jedesa: 71
+amgigojapan: その通りです！
+jedesa：うん、そうだね
+amgigojapan: これで理解できましたか？
+jedesa：分かったと思う
+amgigojapan: わかりました。そのプログラムを作成して、コードをpastebinにアップロードして私に送ってください。
+#run on https://www.programiz.com/online-compiler/9vpWUf2vsaTxm
+import random
+number=random.randrange(1,11)
+correct=True
+
+guess=random.randrange(1,11) # simulate random input
+
+print("Please guess a number from 1 to 10")
+while correct:
+    guess=random.randrange(1,11)
+    print("Input number: ", guess)
+    if guess > number:
+        print("Too high, try again!")
+    elif guess < number:
+        print("Too low, try again!")
+    else:
+        print("That's correct!")
+        correct=False
+
+amgigojapan: ああ、見せてください
+jedesa: 入力を受け付けないようです amigojapan
+jedesa：それで私は工夫を凝らさなければならなかった
+amgigojapan: わかった、jedesa、ちょっと見てみるね。数分待ってて。
+jedesa: ああ…ブラウザ環境はインタラクティブではないと思っていました
+jedesa: こちらは入力があり、最大100まで対応しています。
+#run from https://www.programiz.com/online-compiler/9vpWUf2vsaTxm
+import random
+number=random.randrange(1,11)
+correct=True
+
+guess=random.randrange(1,11) # simulate random input
+
+print("Please guess a number from 1 to 10")
+while correct:
+    guess=random.randrange(1,11)
+    print("Input number: ", guess)
+    if guess > number:
+        print("Too high, try again!")
+    elif guess < number:
+        print("Too low, try again!")
+    else:
+        print("That's correct!")
+        correct=False
+jedesa: ^^ 直しました
+amgigojapan: 見せてください
+amgigojapan: jedesaさん、あなたは私の意図を誤解したか、私に送ろうとしたものを間違えたかのどちらかです。
+jedesa：うーん、最新のやつ？
+amgigojapan: jedesa: ユーザーが入力を受け取る実在の人物であることを望んでいます
+amgigojapan: はい
+amgigojapan: jedesa: 推測すべきなのはコンピューターではなくユーザーだ
+amgigojapan: jedesa: だから私は「私はコンピューターの役を演じていて、あなたはユーザーです」と言ったんです
+jedesa: ユーザーが入力してamigojapanを推測できると思います
+amgigojapan: jedesa: じゃあ、間違ったリンクを送ってきたんじゃない？
+jedesa: そして、コンピューターは最初に乱数を選ぶのですか？
+#run form https://www.programiz.com/online-compiler/16VmIQv6eoNYe
+import random
+number=random.randrange(1,101)
+correct=True
+
+print("Please guess a number from 1 to 100")
+while correct:
+    print("Input number: ")
+    guess=int(input())
+    if guess > number:
+        print("Too high, try again!")
+    elif guess < number:
+        print("Too low, try again!")
+    else:
+        print("That's correct!")
+        correct=False
+
+— amigojapan がクリックする
+jedesa：これはどうですか？
+amgigojapan: はい！それは素晴らしいですね、jedesaさん！
+amgigojapan: jedesa: 最後にもう一度問題に挑戦しますか？それとも今日は終わりにしますか？
+jedesa: 最後の問題は何ですか？
+amgigojapan: jedesa: 記憶ゲームを作ってほしいんだけど、実は私のBBSにあるの
+amgigojapan: jedesa: これは私が考案したゲームです
+jedesa：ああ
+amgigojapan: jedesa: それはドアゲームの 1 つです
+jedesa: ねえ、実はこれまだ確認してないんだけど
+jedesa：わかった
+amgigojapan: わかった
+amgigojapan: BBSはこちらです https://amjp.psy-k.org/JPLY/en.php
+— jedesaがBBSをチェック
+amgigojapan: ありがとう
+amgigojapan: わかった
+amgigojapan: jedesa: 宿題としてやってみたらどう？もう時間がないよ…
+amgigojapan: jedesa: BBSでゲームを試してみてください
+jedesa：わかった
+amgigojapan: jedesa: ところで、回答がなくなるまで、たくさんの改行を出力して画面をクリアしています。
+jedesaの宿題：
+# runs on https://www.programiz.com/online-compiler/63e9CfqUZJCtp
+import time, random
+print("Memorisation Game")
+print("# Memorise the number within 3 seconds!")
+print("# Game over at wrong guess!")
+print("")
+time.sleep(3)
+
+flag=True
+counter=0
+level=10
+start=1
+end=10
+rng=random.randrange(start,end)
+guess=rng
+
+while guess == rng:
+    start=start*level
+    end=end*level
+    
+    while guess == rng:
+        rng = random.randrange(start,end)
+    
+    print(f"Remember this! ",rng, end='\r')
+    time.sleep(3)
+    
+    print(f"What number was shown? ")
+    guess=int(input())
+
+print(f"Good up to", len(str(start)) - 1, "digits")
+</pre>
+</body>
+</html>

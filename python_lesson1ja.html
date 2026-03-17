@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background-color: black;
+    color: rgb(235, 174, 235); /* This sets the text color for the entire body */
+  }
+</style>
+</head>
+<body>
+<pre>
+
+
+amgigojapan: やぁ、jedesa！
+amgigojapan: jedesa: 始めましょうか？
+jedesa: 今日はPythonですか、それともロゴですか？
+amgigojapan: 私たちにはあと1時間ほどしかありません
+jedesa:うん
+amgigojapan: python
+amgigojapan: jedesa: まずはこのリンクにアクセスしてください
+
+</pre>
+<a href="https://stepindev.com/en/py-playground" target="_blank">https://stepindev.com/en/py-playground</a>
+<pre>
+
+jedesa:わかった
+amgigojapan: わかった？
+amgigojapan: 次に、次のプログラムを入力してください:
+jedesa:亀と関数
+amgigojapan: from turtle import *
+amgigojapan: fd(100)
+amgigojapan: 次に実行ボタンを押してください
+jedesa:いいね
+amgigojapan: 了解です。jedesa turtleは、LOGOとほぼ同じように動作するPythonライブラリです。
+jedesa: ああ、既存のアルゴリズムをオフにするのを忘れてた
+amgigojapan: 最初の行でタートルライブラリをインポートし、次の行でLOGOのfd 100のような
+jedesa: 右方向への線
+amgigojapan: はい、ちょっと待ってください
+amgigojapan: 例を挙げましょう
+amgigojapan: jedesa: では、このプログラムを試してみてください:
+from turtle import *
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+
+amgigojapan: プログラムは表示されましたか？
+jedesa:これは正方形になるでしょう
+amgigojapan: はい
+amgigojapan: jedesa: これを試さないでください:
+from turtle import *
+for i in range(0,4):
+    fd(100)
+    rt(90)
+
+jedesa: for は LOGO の repeat 関数に似ています
+amgigojapan: jedesa: 通常のプログラミング言語では、繰り返しループよりも for ループの方が一般的です
+amgigojapan: forループについて説明させてください
+jedesa:なるほど
+amgigojapan: カウンター変数の範囲(start,end)について
+amgigojapan: jedesa: ここでLOGOとの違いがあります。1からではなく0から始める必要があります。
+amgigojapan: 0 を 1 に変更してプログラムを実行してみてください
+amgigojapan: 何が起こりますか？
+jedesa: 片側が欠けているため、反復回数は3回のみ
+amgigojapan: そうだね、jedesa、これはPythonが（0から始まるインデックス）だからだよ。0から数えるんだ。
+jedesa:はい
+amgigojapan: わかりました、では次の例を挙げます。少々お待ちください...
+jedesa:わかった
+from turtle import *
+def square(size):
+    for i in range(0,4):
+        fd(size)
+        rt(90)
+square(100)
+
+amgigojapan: LOGOのこのプログラム覚えてる？
+amgigojapan: 関数を定義します
+jedesa: はい、Pythonの関数です
+amgigojapan: はい
+jedesa: 関数構文
+amgigojapan: jedesa: では、PythonとLOGOの大きな違いについてお話ししましょう。
+jedesaは注意深く耳を傾ける
+amgigojapan: jedesa: Haniibooru さんが「コマンド（命令）の左側の間のスペースは、必要なのか、それとも見た目を良くするためなのか？」と質問していたのを覚えていますか?
+jedesa: (推測) インデント
+amgigojapan: はい
+amgigojapan: jedesa: LOGOではインデントはスタイルのためだけのものですが、Pythonでは必要です
+jedesa: python はそれを考慮に入れていると聞きました
+amgigojapan: そうだね、だからLOGOみたいにENDって入力する必要はないんだよ
+amgigojapan: jedesa: 新しいインデントが作成されるたびに、「新しいコードブロック」が開きます。わかりますか?
+jedesa: ただし、2スペースでも4スペースでもどちらを使っても構いませんが、全体を通して一貫性を保つ必要があります。
+jedesa: 新しいブロックを通知するので...
+amgigojapan: jedesa: スペースを4つ使用してください
+jedesa:わかった
+amgigojapan: わかった
+amgigojapan: さて、本日の最後のプログラムです。少々お待ちください。
+from turtle import *
+def square(size):
+    for i in range(0,4):
+        fd(size)
+        rt(90)
+square(50)
+square(100)
+square(200)
+jedesa: はい、ワークスペースにこれらがあります
+amgigojapan: 何が出現したのですか？
+jedesa: そして、3つの正方形を積み重ねます
+amgigojapan: うん、LOGOでやったのと同じだよ
+amgigojapan: jedesa: さて、宿題は、Pythonで三と品を作ることです。
+jedesa:はい
+amgigojapan: jedesa: LOGOの前回のレッスンと同じです
+jedesa:わかった
+jedesa: 今取り組んでいます :D
+amgigojapan: jedesa: 前回のレッスンはこちらです
+<a href=https://amjp.psy-k.org/Learn-programming-form--AmigoJapan-in-LOGO/index.html target="_blank">https://amjp.psy-k.org/Learn-programming-form--AmigoJapan-in-LOGO/index.html</a>
+#run on https://stepindev.com/en/py-playground
+from turtle import *
+def ichi():
+    fd(100)
+    rt(180)
+    fd(100)
+    lt(90)
+    pu()
+    fd(25)
+    lt(90)
+    pd()
+def san():
+    for i in range(0,3):
+        ichi()
+san()
+– ジェデサはシナに取り組んでいます
+amgigojapan: わかった
+jedesa: Python Turtle のドキュメント <a href=https://docs.python.org/3/library/turtle.html target="_blank">https://docs.python.org/3/library/turtle.html</a>
+jedesa: amigojapan: .. まだそこにいますか?
+amgigojapan: jedesaさんを見せてください
+jedesa:わかった
+amgigojapan: jedesa: 待って
+jedesa: わかったよ :D
+#run on https://stepindev.com/en/py-playground
+from turtle import *
+
+def ichi(size):
+    fd(size)
+    rt(180)
+    fd(size)
+    lt(90)
+    pu()
+    fd(25)
+    lt(90)
+    pd()
+
+def san(size):
+    for i in range(0,3):
+        ichi(size)
+
+def square():
+    pu()
+    seth(45)
+    fd(50)
+    seth(0)
+    pd()
+    for i in range(0,4):
+        rt(90)
+        fd(50)
+    pu()
+
+def shina(size):
+    pu()
+    setpos(0,size)
+    square()
+    setpos(-size,-size)
+    square()
+    setpos(size,-size)
+    square()
+
+san(100)
+resetscreen()
+home()
+shina(30)
+
+amgigojapan: 見せてください
+amgigojapan: はい、それはsanとshinaの両方を書いていますが、わかりました、jedesa、今日のレッスンはこれで終わりです :)
+jedesa: いいね！
+amgigojapan: jedesa: つまり、PythonとLOGOの違いは主に構文の小さな変更点にあるということです。
+</pre>
+</body>
+</html>
