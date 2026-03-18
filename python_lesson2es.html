@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background-color: black;
+    color: rgb(235, 174, 235); /* This sets the text color for the entire body */
+  }
+</style>
+</head>
+<body>
+<pre>
+
+
+amigojapan: ¡Hola jedesa!
+jedesa: ¡ya!
+amgigojapan: ¡yaa!
+jedesa: Entonces, ¿qué vamos a aprender hoy?
+amgigojapan: jedesa: pensé que hoy les enseñaría los 8 conceptos básicos de programación, pero ya hice un curso para eso, déjenme mostrarles.
+amgigojapan: jedesa: esta página es una que escribí
+
+<a href=https://amigojapan-github-io.translate.goog/8_basics_of_programming/8_basics_of_programming_python3_new.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp target="_blank">https://amigojapan.github.io/8_basics_of_programming/8_basics_of_programming_python3_new.html</a>
+
+— jedesa leyendo ..
+amgigojapan: jedesa: sí, hazme cualquier pregunta que tengas, por favor
+jedesa: ok, 10 minutos
+amgigojapan: jedesa: tómate tu tiempo, léelo despacio y haz cualquier pregunta que quieras.
+jedesa: ok tengo que revisarlo
+jedesa: y echa un vistazo a la documentación oficial de Python un poco
+amgigojapan: bien bien jedesa, ¿alguna pregunta?
+Jedesa: Hmm, veamos.
+— Jedesa pensando...
+amgigojapan: ok
+jedesa: para la introducción a la programación en sí, creo que es suficiente.
+amgigojapan: ah ok jedesa
+amgigojapan: jedesa: ahora supongo que para llenar el tiempo extra, pensemos en un ejercicio que pueda hacerte con el nuevo conocimiento.
+jedesa: pero tengo un problema
+amgigojapan: jedesa: primero, ¿puedes hacer un bucle que imprima "Hola, soy jedesa" indefinidamente?
+amgigojapan: ¿Cuál es el problema?
+jedesa: while True: print("Hola, soy jedesa")
+amgigojapan: ¡Oh, genial!
+jedesa: mmm, tiene más que ver con el tiempo y la experiencia que tengo con Python.
+jedesa: He investigado un poco sobre Python en el pasado, pero no sabía que la documentación es bastante buena y completa.
+amgigojapan: jedesa: bueno, creo que necesitas tanto mis instrucciones como los documentos.
+jedesa: De acuerdo
+amgigojapan: jedesa: ok, ahora hazme una lista de tus animes favoritos, luego ordénalos en orden alfabético inverso e imprímela.
+jedesa: ok espera
+amgigojapan: ok
+amgigojapan: tómate tu tiempo
+jedesa: Hice uso de funciones integradas de Python.
+<a href=lesson3img/screenshot2.png><img src="lesson3img/screenshot2.png"width="400" height="250"></a>
+amgigojapan: déjame ver jedesa
+amgigojapan: muy bien jedesa, ahora ¿puedes hacer el juego de adivinar mi número? Quizás necesites buscar cómo generar números aleatorios, o podría enseñarte eso.
+amgigojapan: jedesa: ¿Conoces el juego de adivinar mi número?
+jedesa: No estoy segura de este juego.
+amgigojapan: ok jedesa, ahora fingiré ser la computadora y tú serás el usuario, ¿de acuerdo?
+jedesa: por ejemplo, dado un número del 1 al 10, si tanto el humano como la computadora adivinan correctamente, ¿se detiene?
+amgigojapan: jedesa: bueno, no exactamente
+amgigojapan: jedesa: primero juguemos un juego de rol, luego lo entenderás.
+jedesa: De acuerdo
+amgigojapan: ok, yo soy la computadora
+jedesa: Sí
+amgigojapan: Estoy eligiendo un número del 1 al 100, al azar....
+amgigojapan: jedesa: ok, lo entiendo
+amgigojapan: jedesa: ahora adivina qué número elegí...
+jedesa: hmm 55
+amgigojapan: jedesa: eso es demasiado bajo
+amgigojapan: adivina de nuevo
+jedesa: 75
+amgigojapan: eso es demasiado alto, por favor, inténtalo de nuevo.
+jedesa: 67
+amgigojapan: eso es demasiado bajo, por favor, inténtalo de nuevo.
+jedesa: 70
+amgigojapan: eso es demasiado bajo, por favor, inténtalo de nuevo.
+jedesa: 73
+amgigojapan: eso es demasiado alto, por favor adivina de nuevo.
+jedesa: 72
+amgigojapan: eso es demasiado alto, por favor, inténtalo de nuevo.
+jedesa: 71
+amgigojapan: ¡Lo conseguiste!
+jedesa: hmm sí
+amgigojapan: ¿Ahora lo entiendes?
+Jedesa: Creo que lo entendí.
+amgigojapan: Vale, por favor, crea ese programa, sube el código a pastebin y envíamelo.
+#run on https://www.programiz.com/online-compiler/9vpWUf2vsaTxm
+import random
+number=random.randrange(1,11)
+correct=True
+
+guess=random.randrange(1,11) # simulate random input
+
+print("Please guess a number from 1 to 10")
+while correct:
+    guess=random.randrange(1,11)
+    print("Input number: ", guess)
+    if guess > number:
+        print("Too high, try again!")
+    elif guess < number:
+        print("Too low, try again!")
+    else:
+        print("That's correct!")
+        correct=False
+
+amgigojapan: oh, déjame ver
+jedesa: parece que no acepta entrada amigojapan
+jedesa: Así que tuve que hacer un trabajo
+amgigojapan: ok déjame echar un vistazo jedesa, dame un par de minutos
+jedesa: oh... pensé que el entorno del navegador no era interactivo.
+jedesa: este tiene entrada y hasta 100
+#run from https://www.programiz.com/online-compiler/9vpWUf2vsaTxm
+import random
+number=random.randrange(1,11)
+correct=True
+
+guess=random.randrange(1,11) # simulate random input
+
+print("Please guess a number from 1 to 10")
+while correct:
+    guess=random.randrange(1,11)
+    print("Input number: ", guess)
+    if guess > number:
+        print("Too high, try again!")
+    elif guess < number:
+        print("Too low, try again!")
+    else:
+        print("That's correct!")
+        correct=False
+
+jedesa: ^^ Lo he arreglado
+amgigojapan: déjame ver
+amgigojapan: no jedesa, o malinterpretaste lo que quiero, o te equivocaste en lo que querías enviarme.
+jedesa: hmm, ¿el último?
+amgigojapan: jedesa: Quiero que el usuario sea una persona real, obteniendo información
+amgigojapan: sí
+amgigojapan: jedesa: no es la computadora la que debe adivinar, sino el usuario.
+amgigojapan: jedesa: por eso dije "yo estoy interpretando el papel de la computadora y tú eres el usuario".
+jedesa: Creo que el usuario puede ingresar información y adivinar amigojapan
+amgigojapan: jedesa: ¿Entonces me enviaste el enlace equivocado tal vez?
+jedesa: ¿Y la computadora elige un número aleatorio al principio...?
+#run form https://www.programiz.com/online-compiler/16VmIQv6eoNYe
+import random
+number=random.randrange(1,101)
+correct=True
+
+print("Please guess a number from 1 to 100")
+while correct:
+    print("Input number: ")
+    guess=int(input())
+    if guess > number:
+        print("Too high, try again!")
+    elif guess < number:
+        print("Too low, try again!")
+    else:
+        print("That's correct!")
+        correct=False
+— clics de amigojapan
+Jedesa: ¿Qué te parece esto?
+amgigojapan: ¡Sí! ¡Eso es genial jedesa!
+amgigojapan: jedesa: ¿Estás listo para un último ejercicio o prefieres dar por terminado el día?
+jedesa: ¿Cuál es el último ejercicio?
+amgigojapan: jedesa: Quiero que hagas el juego de memorización, está en mi BBS.
+amgigojapan: jedesa: es un juego que inventé
+jedesa: Oh
+amgigojapan: jedesa: es uno de los juegos de puerta
+jedesa: Oye, en realidad no he comprobado esto.
+jedesa: De acuerdo
+amgigojapan: ok
+amgigojapan: Por cierto, el BBS ya está aquí: https://amjp.psy-k.org/JPLY/en.php
+— jedesa revisa bbs
+amgigojapan: gracias
+amgigojapan: ok
+amgigojapan: jedesa: ¿Por qué no lo haces como tarea? Ya casi se acaba el tiempo...
+amgigojapan: jedesa: simplemente prueba el juego en el BBS
+jedesa: De acuerdo
+amgigojapan: jedesa: por cierto, estoy limpiando la pantalla imprimiendo muchos saltos de línea, hasta que la respuesta desaparezca.
+La tarea de Jedesa:
+# runs on https://www.programiz.com/online-compiler/63e9CfqUZJCtp
+import time, random
+print("Memorisation Game")
+print("# Memorise the number within 3 seconds!")
+print("# Game over at wrong guess!")
+print("")
+time.sleep(3)
+
+flag=True
+counter=0
+level=10
+start=1
+end=10
+rng=random.randrange(start,end)
+guess=rng
+
+while guess == rng:
+    start=start*level
+    end=end*level
+    
+    while guess == rng:
+        rng = random.randrange(start,end)
+    
+    print(f"Remember this! ",rng, end='\r')
+    time.sleep(3)
+    
+    print(f"What number was shown? ")
+    guess=int(input())
+
+print(f"Good up to", len(str(start)) - 1, "digits")
+</pre>
+</body>
+</html>
